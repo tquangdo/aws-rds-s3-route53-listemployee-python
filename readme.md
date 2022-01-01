@@ -37,6 +37,7 @@ sudo python3 EmpApp.py
 ## mysql
 + condition to connect RDS: tai thoi diem tao RDS thi phai chua SG cua EC2 tao sau do
 > neu tao RDS xong roi tao EC2 voi SG moi thi phai tim cach add SG do vo RDS's SG rule
++
 ![rdssg](screenshots/rdssg.png)
 + connect `$ mysql -h employee.cigsfjyovtsz.us-west-2.rds.amazonaws.com -u intellipaat -p`
 ```sql
