@@ -36,8 +36,9 @@ sudo python3 EmpApp.py
 ![port80](screenshots/port80.png)
 
 ## mysql
++ create db name `employee`
 + condition to connect RDS: tai thoi diem tao RDS thi phai chua SG cua EC2 tao sau do
-> neu tao RDS xong roi tao EC2 voi SG moi thi phai tim cach add SG do vo RDS's SG rule
+> neu tao RDS xong roi tao EC2 voi SG moi thi phai tim cach add EC2's SG do vo RDS's SG rule
 +
 ![rdssg](screenshots/rdssg.png)
 + connect `$ mysql -h employee.cigsfjyovtsz.us-west-2.rds.amazonaws.com -u intellipaat -p`
@@ -89,7 +90,7 @@ pip3 install flask pymysql boto3
     ]
 }
 ```
-+ s3 contains file that user upload on browser
++ s3 contains files that user uploaded on browser
 ![s3](screenshots/s3.png)
 
 ## route53: dns for `Public IPv4 address` -> `route53dn.tk`
