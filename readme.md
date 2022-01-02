@@ -30,7 +30,8 @@ sudo python3 EmpApp.py
  * Debugger is active!
  * Debugger PIN: 163-797-406
 ```
-![port80](screenshots/port80.png)
++ access on browser `Public IPv4 address`
+![ipv4](screenshots/ipv4.png)
 + condition to access on browser: MUST open port 80 on `inbound rules`
 ![port80](screenshots/port80.png)
 
@@ -42,7 +43,7 @@ sudo python3 EmpApp.py
 + connect `$ mysql -h employee.cigsfjyovtsz.us-west-2.rds.amazonaws.com -u intellipaat -p`
 ```sql
 create database employee;
-use employee
+use employee;
 create table employee(
     empid varchar(20),
     fname varchar(20),
@@ -68,8 +69,35 @@ pip3 install flask pymysql boto3
 + `python3 EmpApp.py` will output this ERR because local can NOT connect to RDS
 `pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'employee.cigsfjyovtsz.us-west-2.rds.amazonaws.com' (timed out)")`
 
-## aws deploy
-1. 
+## s3
+![s3](screenshots/s3.png)
++ make public all objects in `dtqaddemployee` bucket: edit in bucket policy:
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::dtqaddemployee/*"
+            ]
+        }
+    ]
+}
+```
+
+## route53: dns for `Public IPv4 address` -> `route53dn.tk`
++ create host zone `route53dn.tk`
++ in host zone create 2 record name
+![recname](screenshots/recname.png)
++ buy domain name `route53dn.tk` (💣💣)
++ access on browser `route53dn.tk` (💣💣)
+![dn](screenshots/dn.png)
 
 
 
