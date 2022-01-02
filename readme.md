@@ -67,10 +67,9 @@ show tables;
 pip3 install flask pymysql boto3
 ```
 + `python3 EmpApp.py` will output this ERR because local can NOT connect to RDS
-`pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'employee.cigsfjyovtsz.us-west-2.rds.amazonaws.com' (timed out)")`
+> `pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'employee.cigsfjyovtsz.us-west-2.rds.amazonaws.com' (timed out)")`
 
 ## s3
-![s3](screenshots/s3.png)
 + make public all objects in `dtqaddemployee` bucket: edit in bucket policy:
 ```json
 {
@@ -90,6 +89,8 @@ pip3 install flask pymysql boto3
     ]
 }
 ```
++ s3 contains file that user upload on browser
+![s3](screenshots/s3.png)
 
 ## route53: dns for `Public IPv4 address` -> `route53dn.tk`
 + create host zone `route53dn.tk`
