@@ -1,9 +1,9 @@
-# aws-rds-s3-upimage-python 🐳
+# aws-rds-s3-route53-listemployee-python 🐳
 
-![Stars](https://img.shields.io/github/stars/tquangdo/aws-rds-s3-upimage-python?color=f05340)
-![Issues](https://img.shields.io/github/issues/tquangdo/aws-rds-s3-upimage-python?color=f05340)
-![Forks](https://img.shields.io/github/forks/tquangdo/aws-rds-s3-upimage-python?color=f05340)
-[![Report an issue](https://img.shields.io/badge/Support-Issues-green)](https://github.com/tquangdo/aws-rds-s3-upimage-python/issues/new)
+![Stars](https://img.shields.io/github/stars/tquangdo/aws-rds-s3-route53-listemployee-python?color=f05340)
+![Issues](https://img.shields.io/github/issues/tquangdo/aws-rds-s3-route53-listemployee-python?color=f05340)
+![Forks](https://img.shields.io/github/forks/tquangdo/aws-rds-s3-route53-listemployee-python?color=f05340)
+[![Report an issue](https://img.shields.io/badge/Support-Issues-green)](https://github.com/tquangdo/aws-rds-s3-route53-listemployee-python/issues/new)
 
 ![overall](screenshots/overall.png)
 
@@ -22,8 +22,8 @@ sudo apt-get install python3 python3-pip python3-flask python3-pymysql python3-b
 ```
 + for running application
 ```shell
-git clone https://github.com/tquangdo/aws-rds-s3-upimage-python.git
-cd aws-rds-s3-upimage-python
+git clone https://github.com/tquangdo/aws-rds-s3-route53-listemployee-python.git
+cd aws-rds-s3-route53-listemployee-python
 sudo python3 EmpApp.py
  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
  * Restarting with stat
@@ -100,7 +100,3 @@ pip3 install flask pymysql boto3
 + buy domain name `route53dn.tk` (💣💣)
 + access on browser `route53dn.tk` (💣💣)
 ![dn](screenshots/dn.png)
-
-
-
-
