@@ -37,9 +37,8 @@ sudo python3 EmpApp.py
 
 ## mysql
 + create db name `employee`
-+ condition to connect RDS: tai thoi diem tao RDS thi phai chua SG cua EC2 tao truoc do
-> neu tao RDS xong roi tao EC2 voi EC2's SG=`SGNew` thi trong SG of EC2 phai add them all `RDS's SG` (ngoai `SGNew`)
-+
++ condition to connect RDS: EC2 --> RDS
++ RDS's SG > Inbound > add EC2's SG
 ![rdssg](screenshots/rdssg.png)
 + connect `$ mysql -h employee.cigsfjyovtsz.us-west-2.rds.amazonaws.com -u intellipaat -p`
 ```sql
